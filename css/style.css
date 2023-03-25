@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 95vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    background-color: crimson;
+}
+
+header nav h1 {
+    color: #555;
+}
+
+header nav h1::after {
+    content: "Branddd";
+}
+
+header nav button {
+    background-color: rgb(133, 238, 13);
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    transition: opcity 0.5s ease;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+header nav button:hover {
+    opacity: 0.7;
+}
+
+header nav button::after {
+    content: "hello";
+}
+
+button {
+    background-color: rgb(133, 238, 13);
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    transition: opcity 0.5s ease;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: 900;
+    margin-left: 20px;
+    width: 400px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button::after {
+    content: " Byee";
+}
+
+/*# sourceMappingURL=style.css.map */

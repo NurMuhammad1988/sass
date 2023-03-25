@@ -1,0 +1,60 @@
+@import "./global";
+$globalColor: crimson;
+$textColor: #555;
+$btnColor: rgba(133, 238, 13);
+
+
+@mixin btn ($content, $fontWeight ) {
+    background-color: $btnColor;
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    transition: opcity .5s ease;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: $fontWeight ;
+    // border-radius: 1px black;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &::after {
+        content: $content;
+    }
+}
+
+
+header {
+    width: 100%;
+    height: 95vh;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+        align-items: center;
+        background-color: $globalColor;
+
+        h1 {
+            color: $textColor;
+
+            &::after {
+                content: "Branddd";
+            }
+        }
+
+        button {
+            @include btn ('hello', bold);
+
+        }
+
+    }
+}
+
+button {
+    @include btn (' Byee', 900);
+    margin-left: 20px;
+    width: 400px;
+}
